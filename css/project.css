@@ -1,0 +1,102 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: #020617;
+  color: #e2e8f0;
+
+}
+/* SECTION */
+.projects {
+  padding: 80px 20px;
+  background: #020617;
+  color: #e2e8f0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* HEADING */
+.projects h1 {
+  font-size: 38px;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+/* INTRO */
+.projects .intro {
+  font-size: 18px;
+  color: #cbd5f5;
+  margin-bottom: 50px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+  background: #0f172a;
+  padding: 30px;
+  width: 200px;
+  border-radius: 12px;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow effect */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  opacity: 0;
+  filter: blur(20px);
+  transition: 0.3s;
+  z-index: 0;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* Content */
+.card h2,
+.card p {
+  position: relative;
+  z-index: 1;
+}
+
+.card h2 {
+  font-size: 28px;
+  color: #38bdf8;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* ABOUT TEXT */
+.about-projects {
+  margin-top: 60px;
+}
+
+.about-projects h2 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.about-projects p {
+  color: #cbd5f5;
+  line-height: 1.6;
+}
